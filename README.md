@@ -5,13 +5,13 @@ A collection of color conversion functions.
 ## Installation
 
 ```sh
-npm install @flash/colors
+npm install flash-colors
 ```
 
 ## Usage
 
 ```ts
-import { rgb2hsl } from '@flash/colors'
+import { rgb2hsl } from 'flash-colors'
 
 const [h, s, l] = rgb2hsl(255, 0, 0)
 ```
@@ -69,7 +69,7 @@ Any conversions that are simple compositions of other conversions have been omit
 For example, let's imagine we wanted to convert hsl to cmyk. This function doesn't exist, but it can be trivially created by composing hsl2rgb and rgb2cmyk:
 
 ```ts
-import { hsl2rgb, rgb2cmyk } from '@flash/colors'
+import { hsl2rgb, rgb2cmyk } from 'flash-colors'
 
 export function hsl2cmyk(h: number, s: number, l: number): [number, number, number, number] {
   return rgb2cmyk(...hsl2rgb(h, s, l))

@@ -1,7 +1,13 @@
 {
-  "name": "@flash/colors",
-  "version": "1.0.0",
+  "name": "flash-colors",
+  "version": "1.0.1",
   "description": "A collection of colors for use in your projects",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dirheimerb/-flash-colors",
+    "directory": "packages/colors"
+  },
+  "private": false,
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -35,9 +41,6 @@
     "tsup": "^7.3.0",
     "typedoc": "^0.25.3",
     "typescript": "^5.2.2"
-  },
-  "publishConfig": {
-    "access": "public"
   },
   "prettier": {
     "printWidth": 70,
