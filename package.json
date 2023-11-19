@@ -1,0 +1,54 @@
+{
+  "name": "@flash/colors",
+  "version": "1.0.0",
+  "description": "A collection of colors for use in your projects",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "license": "MIT",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "document": "typedoc --out docs src/index.ts",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "types": "tsc",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "keywords": [
+    "colors",
+    "flash",
+    "flash colors",
+    "flash-colors",
+    "flashcolors",
+    "flash-color",
+    "flashcolor",
+    "color"
+  ],
+  "author": "Bradley Dirheimer <b.dirheimer@gmail.com>",
+  "devDependencies": {
+    "@swc/core": "^1.3.96",
+    "@types/node": "^20.9.2",
+    "prettier": "^3.1.0",
+    "tsup": "^7.3.0",
+    "typedoc": "^0.25.3",
+    "typescript": "^5.2.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "prettier": {
+    "printWidth": 70,
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": true,
+    "quoteProps": "as-needed",
+    "trailingComma": "none",
+    "bracketSpacing": true,
+    "requirePragma": false,
+    "htmlWhitespaceSensitivity": "css"
+  }
+}
